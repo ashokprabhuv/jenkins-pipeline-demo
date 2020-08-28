@@ -1,6 +1,7 @@
 import org.ashok.Constants
 
 def call(Map config=[:], Closure body) {
+    node {
     if (config.info) {
         println "INFO: ${config.msg}"
     } else if (config.error) {
@@ -9,6 +10,7 @@ def call(Map config=[:], Closure body) {
 
     println ${Constants.SLACK_MESSAGE}
     body()
+    }
 }
 
 
