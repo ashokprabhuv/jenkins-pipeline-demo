@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Stage 1") {
             steps {
-                    test1()
+                    test1 name: 'Ashok Prabhu'
             }
         }
     }
