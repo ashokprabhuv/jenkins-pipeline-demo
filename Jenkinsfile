@@ -6,10 +6,7 @@ pipeline {
     stages {
         stage("Stage 1") {
             steps {
-                sh '''
-                    ls
-                '''
-                ashokDemo.printDate
+                    test1()
             }
         }
     }
